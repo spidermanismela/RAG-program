@@ -5,9 +5,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, format_document, MessagesPlaceholder
 from langchain_core.runnables import RunnablePassthrough, RunnableWithMessageHistory, RunnableLambda
 import config_data as config
-from program.file_history_store import get_history
-from program.vector_stores import VectorStoreService
-
+from file_history_store import get_history
+from vector_stores import VectorStoreService
 
 class RagService(object):
     def __init__(self):
